@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.min.css">
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/services-slider.js"></script>
+	<script src="./js/index.js" defer></script>
+	<title>Desk - Our Services</title>
+</head>
+
+<body class="min-h-screen flex flex-col overflow-x-hidden mt-24">
+
+	<!-- modal -->
+	<div class="modal-wrapper modal hidden opacity-0 overscroll-none">
+
+		<div class="bg-white w-full max-w-[520px] m-auto px-[60px] py-[32px] relative rounded-sm">
+
+			<img src="./img//icons/modal-close.svg" alt="Close"
+				class="absolute right-5 top-5 select-none cursor-pointer modal-close">
+
+			<h2 class="text-[40px] font-semibold text-center rounded-sm mb-9">Book Now</h2>
+
+			<div>
+				<form class="space-y-6 w-full max-w-none lg:max-w-[400px]">
+
+					<div class="flex flex-col">
+						<label for="name" class="font-light px-2 text-sm">Full Name</label>
+						<input type="text" id="name" placeholder="Samantha Wheeler" required class="input">
+					</div>
+
+					<div class="flex flex-col">
+						<label for="email" class="font-light px-2 text-sm">Email Address</label>
+						<input type="email" id="email" placeholder="info@gmail.com" required class="input">
+					</div>
+
+					<div class="flex flex-col">
+						<label for="message" class="font-light px-2 text-sm">What are you Contacting us about</label>
+						<textarea name="message" id="message" placeholder="Your message" required
+							class="input resize-y min-h-[65px] max-h-64"></textarea>
+					</div>
+
+					<div>
+						<button type="submit"
+							class="btn w-full text-lg font-semibold bg-black text-white hover:text-black hover:bg-white border-black">
+							let's talk
+						</button>
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /modal -->
+
+	<!-- mobile menu -->
+	<div class="mobile-menu md:hidden">
+
+		<ul class="text-center text-2xl space-y-5 uppercase">
+			<li><a href="./index.html">about us</a></li>
+			<li><a href="./services.html">our service</a></li>
+			<li><a href="./gallery.html">gallery</a></li>
+			<li><a href="./contact.html">contact us</a></li>
+		</ul>
+
+		<div class="absolute right-5 top-5 close-btn">
+			<button type="button">
+				<img src="./img/close.svg" alt="Close">
+			</button>
+		</div>
+
+	</div>
+	<!-- /mobile menu -->
+
+	<!-- header -->
+	<header class="border-b fixed top-0 left-0 right-0 z-10 bg-white font-semibold">
+		<div class="container flex items-center justify-between h-24">
+
+			<a href="./index.html">
+				<img src="./img//logo.svg" alt="Logo">
+			</a>
+
+			<nav class="hidden md:block">
+				<ul class="flex space-x-6 lg:space-x-14 uppercase">
+					<li><a href="./index.html" class="hover:nav-link">about us</a></li>
+					<li><a href="./services.html" class="hover:nav-link nav-link__active">our service</a></li>
+					<li><a href="./gallery.html" class="hover:nav-link">gallery</a></li>
+					<li><a href="./contact.html" class="hover:nav-link">contact us</a></li>
+				</ul>
+			</nav>
+
+			<div class="hidden md:block">
+				<button type="button" class="btn border-black hover:bg-black hover:text-white" id="header-btn">book now</button>
+			</div>
+
+			<div class="burger-btn md:hidden">
+				<button type="button"><img src="./img/burger.svg" alt="Burger Menu"></button>
+			</div>
+
+		</div>
+	</header>
+	<!-- /header -->
+
+	<main>
+
+		<!-- hero -->
+		<div class="container pt-10 lg:pt-20 pb-10 lg:pb-24 md:flex gap-12 lg:gap-16">
+
+			<div class="relative">
+				<img src="./img/hero-img.jpg" alt="Hero" class="hidden md:block">
+				<img src="./img/hero-img2.jpg" alt="Hero2"
+					class="absolute translate-y-1/2 top-1/2 left-1/2 select-none pointer-events-none hidden lg:block">
+			</div>
+
+			<div class="flex-1">
+				<h1 class="text-5xl lg:text-[64px] font-semibold leading-tight">
+					Manufacture of exclusive decking & fencing from rare woods
+				</h1>
+				<div class="flex justify-end mt-20 lg:mt-40">
+					<a href="#" class="btn px-24 bg-black text-white hover:bg-white hover:text-black border-black">let's talk</a>
+				</div>
+			</div>
+
+		</div>
+		<!-- /hero -->
+
+		<!-- slider -->
+		<div class="container overflow-hidden pb-20 pt-10 lg:pt-32">
+
+			<div class="swiper relative overflow-visible ">
+
+				<div
+					class="right-arrow inline-block absolute top-[102%] right-1/2 translate-x-full sm:translate-x-0 sm:right-0 sm:top-1/2 z-10 select-none w-[70px] h-[70px] sm:-translate-y-5">
+					<img src="./img/right-arrow.svg" alt="Right">
+				</div>
+
+				<div class="pagination text-sm sm:text-[22px] font-bold flex justify-center mb-5 sm:mb-14 lg:mb-24"></div>
+
+				<div class="swiper-wrapper">
+
+					<div class="swiper-slide">
+						<div class="flex flex-col lg:flex-row gap-3 lg:gap-16 overflow-hidden">
+
+							<div class="w-[450px] h-64 mx-auto lg:mx-0">
+								<img src="./img/slider/1.jpg" alt="Slider" class="w-full h-full object-cover">
+							</div>
+
+							<div class="flex-1 max-w-[410px] space-y-5 mx-auto lg:mx-0">
+								<h2 class="font-medium text-[40px] text-center lg:text-left">Service 1</h2>
+								<div class="space-y-7 text-sm">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id mus eleifend imperdiet fusce viverra.
+										Ullamcorper amet nulla
+										tortor arcu egestas diam dui id odio. Ut ac quis viverra massa eget cursus. Netus massa egestas
+										faucibus ut aliquet
+										adipiscing venenatis, senectus ac.
+									</p>
+									<p>Augue aliquet molestie nibh elementum orci praesent. Posuere nec, lobortis libero dignissim tellus
+										dictum</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="flex flex-col lg:flex-row gap-3 lg:gap-16 overflow-hidden">
+
+							<div class="w-[450px] h-64 mx-auto lg:mx-0">
+								<img src="./img/slider/1.jpg" alt="Slider" class="w-full h-full object-cover">
+							</div>
+
+							<div class="flex-1 max-w-[410px] space-y-5 mx-auto lg:mx-0">
+								<h2 class="font-medium text-[40px] text-center lg:text-left">Service 2</h2>
+								<div class="space-y-7 text-sm">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id mus eleifend imperdiet fusce viverra.
+										Ullamcorper amet nulla
+										tortor arcu egestas diam dui id odio. Ut ac quis viverra massa eget cursus. Netus massa egestas
+										faucibus ut aliquet
+										adipiscing venenatis, senectus ac.
+									</p>
+									<p>Augue aliquet molestie nibh elementum orci praesent. Posuere nec, lobortis libero dignissim tellus
+										dictum</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="flex flex-col lg:flex-row gap-3 lg:gap-16 overflow-hidden">
+
+							<div class="w-[450px] h-64 mx-auto lg:mx-0">
+								<img src="./img/slider/1.jpg" alt="Slider" class="w-full h-full object-cover">
+							</div>
+
+							<div class="flex-1 max-w-[410px] space-y-5 mx-auto lg:mx-0">
+								<h2 class="font-medium text-[40px] text-center lg:text-left">Service 3</h2>
+								<div class="space-y-7 text-sm">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id mus eleifend imperdiet fusce viverra.
+										Ullamcorper amet nulla
+										tortor arcu egestas diam dui id odio. Ut ac quis viverra massa eget cursus. Netus massa egestas
+										faucibus ut aliquet
+										adipiscing venenatis, senectus ac.
+									</p>
+									<p>Augue aliquet molestie nibh elementum orci praesent. Posuere nec, lobortis libero dignissim tellus
+										dictum</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="flex flex-col lg:flex-row gap-3 lg:gap-16 overflow-hidden">
+
+							<div class="w-[450px] h-64 mx-auto lg:mx-0">
+								<img src="./img/slider/1.jpg" alt="Slider" class="w-full h-full object-cover">
+							</div>
+
+							<div class="flex-1 max-w-[410px] space-y-5 mx-auto lg:mx-0">
+								<h2 class="font-medium text-[40px] text-center lg:text-left">Service 4</h2>
+								<div class="space-y-7 text-sm">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id mus eleifend imperdiet fusce viverra.
+										Ullamcorper amet nulla
+										tortor arcu egestas diam dui id odio. Ut ac quis viverra massa eget cursus. Netus massa egestas
+										faucibus ut aliquet
+										adipiscing venenatis, senectus ac.
+									</p>
+									<p>Augue aliquet molestie nibh elementum orci praesent. Posuere nec, lobortis libero dignissim tellus
+										dictum</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div
+					class="left-arrow inline-block absolute left-1/2 sm:left-auto -bottom-[13.2%] -translate-x-full sm:translate-x-0 sm:right-10 sm:top-1/2 z-10 select-none w-[70px] h-[70px] sm:translate-y-5">
+					<img src="./img/left-arrow.svg" alt="Left">
+				</div>
+
+			</div>
+
+		</div>
+		<!-- /slider -->
+
+		<!-- services -->
+		<div class="container py-10 space-y-24">
+
+			<h2 class="font-semibold text-3xl md:text-[40px] max-w-2xl w-full">
+				Manufacture of exclusive decking & fencing from rare woods
+			</h2>
+
+			<div class="space-y-10 sm:space-y-0 sm:flex gap-14 md:gap-24">
+
+				<div class="sm:w-1/2 space-y-10 md:space-y-20">
+
+					<div>
+						<img src="./img/services/page1.jpg" alt="Service" class="mx-auto sm:mx-0">
+					</div>
+
+					<div class="space-y-10">
+						<h3 class="font-medium text-2xl sm:max-w-[300px] sm:ml-auto text-center sm:text-left">Lorem ipsum dolor sit
+							amet, consectetur
+							adipiscing
+							elit.</h3>
+						<p class="max-w-xs font-light text-sm mx-auto">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, consequat maecenas et mauris pellentesque
+							tincidunt nec. Id consectetur cursus quis blandit felis.
+						</p>
+						<div class="flex justify-center">
+							<a href="#" class="btn border-black hover:bg-black hover:text-white">book now</a>
+						</div>
+					</div>
+
+					<div>
+						<img src="./img/services/page2.jpg" alt="Service" class="mx-auto sm:mx-0">
+					</div>
+
+				</div>
+
+				<div class="sm:w-1/2 space-y-10 md:space-y-20">
+
+					<div class="space-y-10">
+						<h3 class="font-medium text-2xl sm:max-w-[300px] text-center sm:text-left">Lorem ipsum dolor sit amet,
+							consectetur adipiscing
+							elit.</h3>
+						<p class="max-w-xs font-light text-sm mx-auto">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, consequat maecenas et mauris pellentesque
+							tincidunt nec. Id consectetur cursus quis blandit felis.
+						</p>
+					</div>
+
+					<div>
+						<img src="./img/services/page3.jpg" alt="Service" class="mx-auto sm:mx-0">
+					</div>
+
+					<div class="space-y-10">
+						<h3 class="font-medium text-2xl sm:max-w-[300px] text-center sm:text-left">Lorem ipsum dolor sit amet,
+							consectetur adipiscing
+							elit.</h3>
+						<p class="max-w-xs font-light text-sm mx-auto">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, consequat maecenas et mauris pellentesque
+							tincidunt nec. Id consectetur cursus quis blandit felis.
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		<!-- /services -->
+
+
+		<!-- our clients -->
+		<div class="container grid lg:grid-cols-2 gap-8 items-center py-10">
+
+			<div class="space-y-5">
+				<h2 class="font-semibold text-[40px]">Our Clients</h2>
+				<p class="opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium enim, odio
+					quas corporis
+					eligendi neque consequuntur illo.</p>
+			</div>
+
+			<div class="grid sm:grid-cols-2 items-center place-items-center gap-y-10 md:gap-y-16">
+
+				<div class="w-40 h-12">
+					<img src="./img/clients/google.svg" alt="Google" class="w-full h-full">
+				</div>
+
+				<div class="w-40 h-12">
+					<img src="./img/clients/microsoft.svg" alt="Microsoft" class="w-full h-full">
+				</div>
+
+				<div class="w-40 h-12">
+					<img src="./img/clients/microsoft.svg" alt="Microsoft" class="w-full h-full">
+				</div>
+
+				<div class="w-40 h-12">
+					<img src="./img/clients/google.svg" alt="Google" class="w-full h-full">
+				</div>
+
+			</div>
+
+
+		</div>
+		<!-- /our clients -->
+
+		<!-- contact -->
+		<div class="py-24 relative scroll-mt-16 overflow-hidden w-full">
+			<div class="container grid md:grid-cols-2 gap-10 place-content-center md:place-content-start">
+
+				<div class="space-y-10">
+
+					<h2 class="font-semibold text-4xl">Get in Touch</h2>
+
+					<p class="opacity-80 w-full max-w-[287px]">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+
+					<div class="space-y-5">
+
+						<div class="flex items-center space-x-2">
+							<div class="w-14 h-14">
+								<img src="./img/icons/phone.svg" alt="Phone">
+							</div>
+							<div>
+								<p class="font-semibold">Phone Number</p>
+								<a href="tel:+15132642969" class="inline-block font-semibold text-[28px]">+1 (153) 264-2969</a>
+							</div>
+						</div>
+
+						<div class="flex items-center space-x-2">
+							<div class="w-14 h-14">
+								<img src="./img/icons/message.svg" alt="Message">
+							</div>
+							<div>
+								<p class="font-semibold">Email</p>
+								<a href="mailto:info@company.com" class="inline-block font-semibold text-[28px]">info@company.com</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<div>
+					<form class="space-y-6 w-full max-w-none lg:max-w-[400px]">
+
+						<div class="flex flex-col">
+							<label for="name" class="font-light px-2 text-sm">Full Name</label>
+							<input type="text" id="name" placeholder="Samantha Wheeler" required class="input">
+						</div>
+
+						<div class="flex flex-col">
+							<label for="email" class="font-light px-2 text-sm">Email Address</label>
+							<input type="email" id="email" placeholder="info@gmail.com" required class="input">
+						</div>
+
+						<div class="flex flex-col">
+							<label for="message" class="font-light px-2 text-sm">What are you Contacting us about</label>
+							<textarea name="message" id="message" placeholder="Your message" required
+								class="input resize-y min-h-[65px] max-h-64"></textarea>
+						</div>
+
+						<div>
+							<button type="submit"
+								class="btn w-full text-lg font-semibold bg-black text-white hover:text-black hover:bg-white border-black">
+								let's talk
+							</button>
+						</div>
+
+					</form>
+				</div>
+
+			</div>
+
+			<img src="./img/worker.jpg" alt="Worker"
+				class="select-none pointer-events-none absolute -right-24 bottom-0 hidden xl:block">
+
+		</div>
+		<!-- /contact -->
+
+	</main>
+
+	<!-- footer -->
+	<footer class="mt-auto bg-black text-white pt-14">
+		<div class="container">
+
+			<div class="flex justify-center md:justify-start">
+				<a href="./index.html">
+					<img src="./img//footer-logo.svg" alt="Logo">
+				</a>
+			</div>
+
+			<div class="border-b border-white flex md:justify-between flex-col md:flex-row items-baseline py-7 space-y-5">
+
+				<div class="mx-auto md:mx-0">
+					<ul class="flex flex-col space-y-5 text-center sm:text-left sm:space-y-0 sm:flex-row sm:space-x-14">
+						<li><a href="./index.html">About Us</a></li>
+						<li><a href="./services.html">Our service</a></li>
+						<li><a href="./gallery.html">Gallery</a></li>
+						<li><a href="./contact.html">Contact us</a></li>
+					</ul>
+				</div>
+
+				<div class="mx-auto md:mx-0">
+					<ul class="flex space-x-5 items-center">
+						<li><a href="#"><img src="./img/social-icons/facebook.svg" alt="Facebook"></a></li>
+						<li><a href="#"><img src="./img//social-icons/twitter.svg" alt="Twitter"></a></li>
+						<li><a href="#"><img src="./img/social-icons/linkedin.svg" alt="Linked In"></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="flex flex-col sm:flex-row sm:justify-between py-7 space-y-3 sm:space-y-0">
+
+				<div class="flex justify-center sm:justify-start">
+					<div class="flex text-xs opacity-80 divide-x space-x-3">
+						<div>Privacy</div>
+						<div class="pl-3">Cookie Policy</div>
+						<div class="pl-3">Terms Of Service</div>
+					</div>
+				</div>
+
+				<div class="opacity-80 text-xs text-center sm:text-right">
+					<p>Copyright © Company name All rights reserved</p>
+				</div>
+
+			</div>
+
+		</div>
+	</footer>
+	<!-- /footer -->
+
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+	<link rel="stylesheet" href="./css/style.min.css">
+	<script src="./js/index.js" defer></script>
+	<title>Desk - Contact us</title>
+</head>
+
+<body class="min-h-screen flex flex-col overflow-x-hidden">
+
+	<!-- modal -->
+	<div class="modal-wrapper modal hidden opacity-0 overscroll-none">
+
+		<div class="bg-white w-full max-w-[520px] m-auto px-[60px] py-[32px] relative rounded-sm">
+
+			<img src="./img//icons/modal-close.svg" alt="Close"
+				class="absolute right-5 top-5 select-none cursor-pointer modal-close">
+
+			<h2 class="text-[40px] font-semibold text-center rounded-sm mb-9">Book Now</h2>
+
+			<div>
+				<form class="space-y-6 w-full max-w-none lg:max-w-[400px]">
+
+					<div class="flex flex-col">
+						<label for="name" class="font-light px-2 text-sm">Full Name</label>
+						<input type="text" id="name" placeholder="Samantha Wheeler" required class="input">
+					</div>
+
+					<div class="flex flex-col">
+						<label for="email" class="font-light px-2 text-sm">Email Address</label>
+						<input type="email" id="email" placeholder="info@gmail.com" required class="input">
+					</div>
+
+					<div class="flex flex-col">
+						<label for="message" class="font-light px-2 text-sm">What are you Contacting us about</label>
+						<textarea name="message" id="message" placeholder="Your message" required
+							class="input resize-y min-h-[65px] max-h-64"></textarea>
+					</div>
+
+					<div>
+						<button type="submit"
+							class="btn w-full text-lg font-semibold bg-black text-white hover:text-black hover:bg-white border-black">
+							let's talk
+						</button>
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /modal -->
+
+	<!-- mobile menu -->
+	<div class="mobile-menu md:hidden">
+
+		<ul class="text-center text-2xl space-y-5 uppercase">
+			<li><a href="./index.html">about us</a></li>
+			<li><a href="./services.html">our service</a></li>
+			<li><a href="./gallery.html">gallery</a></li>
+			<li><a href="./contact.html">contact us</a></li>
+		</ul>
+
+		<div class="absolute right-5 top-5 close-btn">
+			<button type="button">
+				<img src="./img/close.svg" alt="Close">
+			</button>
+		</div>
+
+	</div>
+	<!-- /mobile menu -->
+
+	<!-- header -->
+	<header class="border-b fixed top-0 left-0 right-0 z-10 bg-white font-semibold">
+		<div class="container flex items-center justify-between h-24">
+
+			<a href="./index.html">
+				<img src="./img//logo.svg" alt="Logo">
+			</a>
+
+			<nav class="hidden md:block">
+				<ul class="flex space-x-6 lg:space-x-14 uppercase">
+					<li><a href="./index.html" class="hover:nav-link">about us</a></li>
+					<li><a href="./services.html" class="hover:nav-link">our service</a></li>
+					<li><a href="./gallery.html" class="hover:nav-link">gallery</a></li>
+					<li><a href="./contact.html" class="hover:nav-link nav-link__active">contact us</a></li>
+				</ul>
+			</nav>
+
+			<div class="hidden md:block">
+				<button type="button" class="btn border-black hover:bg-black hover:text-white" id="header-btn">book now</button>
+			</div>
+
+			<div class="burger-btn md:hidden">
+				<button type="button"><img src="./img/burger.svg" alt="Burger Menu"></button>
+			</div>
+
+		</div>
+	</header>
+	<!-- /header -->
+
+	<main class="mt-24">
+		<!-- contact -->
+		<div class="py-24 relative scroll-mt-16 overflow-hidden">
+			<div class="container grid md:grid-cols-2 gap-10 place-content-center md:place-content-start">
+
+				<div class="space-y-10">
+
+					<h2 class="font-semibold text-4xl">Get in Touch</h2>
+
+					<p class="opacity-80 w-full max-w-[287px]">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+
+					<div class="space-y-5">
+
+						<div class="flex items-center space-x-2">
+							<div class="w-14 h-14">
+								<img src="./img/icons/phone.svg" alt="Phone">
+							</div>
+							<div>
+								<p class="font-semibold">Phone Number</p>
+								<a href="tel:+15132642969" class="inline-block font-semibold text-[28px]">+1 (153) 264-2969</a>
+							</div>
+						</div>
+
+						<div class="flex items-center space-x-2">
+							<div class="w-14 h-14">
+								<img src="./img/icons/message.svg" alt="Message">
+							</div>
+							<div>
+								<p class="font-semibold">Email</p>
+								<a href="mailto:info@company.com" class="inline-block font-semibold text-[28px]">info@company.com</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<div>
+					<form class="space-y-6 w-full max-w-none lg:max-w-[400px]">
+
+						<div class="flex flex-col">
+							<label for="name" class="font-light px-2 text-sm">Full Name</label>
+							<input type="text" id="name" placeholder="Samantha Wheeler" required class="input">
+						</div>
+
+						<div class="flex flex-col">
+							<label for="email" class="font-light px-2 text-sm">Email Address</label>
+							<input type="email" id="email" placeholder="info@gmail.com" required class="input">
+						</div>
+
+						<div class="flex flex-col">
+							<label for="message" class="font-light px-2 text-sm">What are you Contacting us about</label>
+							<textarea name="message" id="message" placeholder="Your message" required
+								class="input resize-y min-h-[65px] max-h-64"></textarea>
+						</div>
+
+						<div>
+							<button type="submit"
+								class="btn w-full text-lg font-semibold bg-black text-white hover:text-black hover:bg-white border-black">
+								let's talk
+							</button>
+						</div>
+
+					</form>
+				</div>
+
+			</div>
+
+			<img src="./img/worker.jpg" alt="Worker"
+				class="select-none pointer-events-none absolute -right-24 bottom-0 hidden xl:block">
+
+		</div>
+		<!-- /contact -->
+	</main>
+
+	<!-- footer -->
+	<footer class="mt-auto bg-black text-white pt-14">
+		<div class="container">
+
+			<div class="flex justify-center md:justify-start">
+				<a href="./index.html">
+					<img src="./img//footer-logo.svg" alt="Logo">
+				</a>
+			</div>
+
+			<div class="border-b border-white flex md:justify-between flex-col md:flex-row items-baseline py-7 space-y-5">
+
+				<div class="mx-auto md:mx-0">
+					<ul class="flex flex-col space-y-5 text-center sm:text-left sm:space-y-0 sm:flex-row sm:space-x-14">
+						<li><a href="./index.html">About Us</a></li>
+						<li><a href="./services.html">Our service</a></li>
+						<li><a href="./gallery.html">Gallery</a></li>
+						<li><a href="./contact.html">Contact us</a></li>
+					</ul>
+				</div>
+
+				<div class="mx-auto md:mx-0">
+					<ul class="flex space-x-5 items-center">
+						<li><a href="#"><img src="./img/social-icons/facebook.svg" alt="Facebook"></a></li>
+						<li><a href="#"><img src="./img//social-icons/twitter.svg" alt="Twitter"></a></li>
+						<li><a href="#"><img src="./img/social-icons/linkedin.svg" alt="Linked In"></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="flex flex-col sm:flex-row sm:justify-between py-7 space-y-3 sm:space-y-0">
+
+				<div class="flex justify-center sm:justify-start">
+					<div class="flex text-xs opacity-80 divide-x space-x-3">
+						<div>Privacy</div>
+						<div class="pl-3">Cookie Policy</div>
+						<div class="pl-3">Terms Of Service</div>
+					</div>
+				</div>
+
+				<div class="opacity-80 text-xs text-center sm:text-right">
+					<p>Copyright © Company name All rights reserved</p>
+				</div>
+
+			</div>
+
+		</div>
+	</footer>
+	<!-- /footer -->
+
+</body>
+
+</html>

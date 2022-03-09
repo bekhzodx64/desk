@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+	<link rel="stylesheet" href="./css/style.min.css">
+	<script src="./js/index.js" defer></script>
+	<title>Desk</title>
+</head>
+
+<body class="min-h-screen flex flex-col overflow-x-hidden mt-24">
+
+	<!-- modal -->
+	<div class="modal-wrapper modal hidden opacity-0 overscroll-none">
+
+		<div class="bg-white w-full max-w-[520px] m-auto px-[60px] py-[32px] relative rounded-sm">
+
+			<img src="./img//icons/modal-close.svg" alt="Close"
+				class="absolute right-5 top-5 select-none cursor-pointer modal-close">
+
+			<h2 class="text-[40px] font-semibold text-center rounded-sm mb-9">Book Now</h2>
+
+			<div>
+				<form class="space-y-6 w-full max-w-none lg:max-w-[400px]">
+
+					<div class="flex flex-col">
+						<label for="name" class="font-light px-2 text-sm">Full Name</label>
+						<input type="text" id="name" placeholder="Samantha Wheeler" required class="input">
+					</div>
+
+					<div class="flex flex-col">
+						<label for="email" class="font-light px-2 text-sm">Email Address</label>
+						<input type="email" id="email" placeholder="info@gmail.com" required class="input">
+					</div>
+
+					<div class="flex flex-col">
+						<label for="message" class="font-light px-2 text-sm">What are you Contacting us about</label>
+						<textarea name="message" id="message" placeholder="Your message" required
+							class="input resize-y min-h-[65px] max-h-64"></textarea>
+					</div>
+
+					<div>
+						<button type="submit"
+							class="btn w-full text-lg font-semibold bg-black text-white hover:text-black hover:bg-white border-black">
+							let's talk
+						</button>
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /modal -->
+
+	<!-- mobile menu -->
+	<div class="mobile-menu md:hidden">
+
+		<ul class="text-center text-2xl space-y-5 uppercase">
+			<li><a href="./index.html">about us</a></li>
+			<li><a href="./services.html">our service</a></li>
+			<li><a href="./gallery.html">gallery</a></li>
+			<li><a href="./contact.html">contact us</a></li>
+		</ul>
+
+		<div class="absolute right-5 top-5 close-btn">
+			<button type="button">
+				<img src="./img/close.svg" alt="Close">
+			</button>
+		</div>
+
+	</div>
+	<!-- /mobile menu -->
+
+	<!-- header -->
+	<header class="border-b fixed top-0 left-0 right-0 z-20 bg-white font-semibold">
+		<div class="container flex items-center justify-between h-24">
+
+			<a href="./index.html">
+				<img src="./img//logo.svg" alt="Logo">
+			</a>
+
+			<nav class="hidden md:block">
+				<ul class="flex space-x-6 lg:space-x-14 uppercase">
+					<li><a href="./index.html" class="hover:nav-link nav-link__active">about us</a></li>
+					<li><a href="./services.html" class="hover:nav-link">our service</a></li>
+					<li><a href="./gallery.html" class="hover:nav-link">gallery</a></li>
+					<li><a href="./contact.html" class="hover:nav-link">contact us</a></li>
+				</ul>
+			</nav>
+
+			<div class="hidden md:block">
+				<button type="button" class="btn border-black hover:bg-black hover:text-white" id="header-btn">book now</button>
+			</div>
+
+			<div class="burger-btn md:hidden">
+				<button type="button"><img src="./img/burger.svg" alt="Burger Menu"></button>
+			</div>
+
+		</div>
+	</header>
+	<!-- /header -->
+
+	<main>
+
+		<!-- hero -->
+		<div class="container pt-10 lg:pt-20 pb-16 relative">
+
+			<div>
+				<h1
+					class="uppercase font-medium text-3xl sm:text-5xl lg:text-7xl leading-none sm:leading-[60px] lg:leading-[88px] lg:max-w-3xl tracking-wider text-center lg:text-left">
+					decking & fencing reconstruction installation
+				</h1>
+				<p class="text-xl py-5 lg:py-12 text-center lg:max-w-lg">from slabs of rare woods species</p>
+				<p class="text-[#808080] text-sm text-center lg:text-left max-w-sm mx-auto lg:mx-0 lg:max-w-[400px]">
+					Pick up everythng you need to design a complete, harmonious, stylish and cozy interior of your apartment or
+					house in one place.
+				</p>
+			</div>
+
+			<div class="absolute right-0 bottom-10 hidden lg:block">
+				<p class="max-w-[180px] ml-auto font-medium mb-4">Look at the production of COMPANY NAME</p>
+				<iframe class="aspect-video h-64" src="https://www.youtube.com/embed/mSC6GwizOag" title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+
+			<img src="./img/tool.png" alt="Tool"
+				class="absolute -left-20 top-1/2 select-none pointer-events-none hidden lg:block">
+
+		</div>
+		<!-- /hero -->
+
+		<!-- statistics -->
+		<div class="border py-12 relative overflow-hidden">
+			<div class="container grid sm:grid-cols-3 place-items-center grid-rows-2 lg:grid-rows-1 gap-10">
+
+				<div class="w-full max-w-[250px] h-[120px] text-center space-y-5 text-sm">
+					<div class="w-11 h-11 mx-auto">
+						<img src="./img/icons/compass.svg" alt="Compass" class="w-full h-full">
+					</div>
+					<div>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+
+				<div
+					class="w-full max-w-[250px] h-[120px] text-center space-y-5 sm:row-start-2 sm:col-span-3 lg:row-auto lg:col-span-1 text-sm">
+					<div class="w-11 h-11 mx-auto">
+						<img src="./img/icons/award.svg" alt="Award" class="w-full h-full">
+					</div>
+					<div>
+						<p>50 years minimum service life or money back</p>
+					</div>
+				</div>
+
+				<div class="w-full max-w-[250px] h-[120px] text-center space-y-5 sm:col-start-3 lg:col-start-auto text-sm">
+					<div class="w-11 h-11 mx-auto">
+						<img src="./img/icons/ruler.svg" alt="Ruler" class="w-full h-full">
+					</div>
+					<div>
+						<p>Our specialist will come free of charge at any time and take measurements with a consultation</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="absolute right-0 bottom-0 select-none pointer-events-none hidden md:block">
+				<img src="./img/pencil.png" alt="Pencil">
+			</div>
+
+		</div>
+		<!-- /statistics -->
+
+		<!-- our company -->
+		<div class="py-10 container grid lg:grid-cols-2 xl:grid-cols-10 items-center gap-5 md:gap-10 xl:gap-20">
+
+			<div class="xl:col-span-4 md:max-w-md md:mx-auto lg:max-w-none lg:mx-0">
+				<img src="./img//company.jpg" alt="Our Company" class="w-full h-full object-cover">
+			</div>
+
+			<div class="xl:col-span-6 space-y-5 md:space-y-10">
+				<h2 class="text-4xl sm:text-[40px] font-medium uppercase">our company</h2>
+				<div class="space-y-5 text-sm">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt delectus odio odit eaque dolore
+						iusto, laborum minima modi maiores provident laudantium voluptatum vitae dolor temporibus cumque
+						asperiores reprehenderit voluptatibus ducimus id incidunt officiis accusamus? Voluptas saepe, repellat
+						reiciendis porro ad ducimus, est quod quo, id excepturi autem quisquam laborum quos voluptatem nesciunt
+						neque aut ab? Obcaecati iusto dolorum itaque et, aspernatur sequi totam.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, accusantium dolore praesentium,
+						voluptates nihil pariatur, harum et voluptatum ullam itaque rerum odio voluptatibus reprehenderit cum
+						placeat inventore error delectus autem? Dolore quos id dolores rem quis expedita perspiciatis in enim
+						vitae delectus, itaque cumque cum officiis doloribus iusto culpa est ea. Quos distinctio qui quis,
+						consequuntur ullam laboriosam dolores enim maiores debitis incidunt.</p>
+				</div>
+			</div>
+
+		</div>
+		<!-- /our company -->
+
+		<!-- services -->
+		<div class="container space-y-5 md:space-y-14 py-10">
+
+			<h2 class="font-semibold text-2xl md:text-[40px] w-full max-w-3xl md:leading-[55px]">
+				Manufacture of exclusive decking & fencing from rare woods
+			</h2>
+
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
+
+				<!-- card -->
+				<div class="w-full max-w-sm xl:max-w-none overflow-hidden">
+
+					<div class="group w-full h-60 overflow-hidden relative">
+						<img src="./img/services/1.jpg" alt="Service" class="w-full h-full object-cover z-0">
+						<div
+							class="absolute z-10 inset-0 bg-black/30 flex items-center justify-center transition-all opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+							<a href="#" class="btn border-white text-white hover:bg-white hover:text-black">in detail</a>
+						</div>
+					</div>
+
+					<div class="py-5 space-y-3">
+						<h3 class="font-medium text-2xl">Service 1</h3>
+						<p class="opacity-70 text-sm">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor nulla quis sed vitae dictumst. Cras leo
+							nunc nulla feugiat elementum augue sem. Ac vitae nascetur in non.
+						</p>
+					</div>
+
+				</div>
+				<!-- /card -->
+
+				<!-- card -->
+				<div class="w-full max-w-sm xl:max-w-none overflow-hidden">
+
+					<div class="group w-full h-60 overflow-hidden relative">
+						<img src="./img/services/2.jpg" alt="Service" class="w-full h-full object-cover z-0">
+						<div
+							class="absolute z-10 inset-0 bg-black/30 flex items-center justify-center transition-all opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+							<a href="#" class="btn border-white text-white hover:bg-white hover:text-black">in detail</a>
+						</div>
+					</div>
+
+					<div class="py-5 space-y-3">
+						<h3 class="font-medium text-2xl">Service 2</h3>
+						<p class="opacity-70 text-sm">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor nulla quis sed vitae dictumst. Cras leo
+							nunc nulla feugiat elementum augue sem. Ac vitae nascetur in non.
+						</p>
+					</div>
+
+				</div>
+				<!-- /card -->
+
+				<!-- card -->
+				<div class="w-full max-w-sm xl:max-w-none overflow-hidden">
+
+					<div class="group w-full h-60 overflow-hidden relative">
+						<img src="./img/services/3.jpg" alt="Service" class="w-full h-full object-cover z-0">
+						<div
+							class="absolute z-10 inset-0 bg-black/30 flex items-center justify-center transition-all opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+							<a href="#" class="btn border-white text-white hover:bg-white hover:text-black">in detail</a>
+						</div>
+					</div>
+
+					<div class="py-5 space-y-3">
+						<h3 class="font-medium text-2xl">Service 3</h3>
+						<p class="opacity-70 text-sm">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor nulla quis sed vitae dictumst. Cras leo
+							nunc nulla feugiat elementum augue sem. Ac vitae nascetur in non.
+						</p>
+					</div>
+
+				</div>
+				<!-- /card -->
+
+				<!-- card -->
+				<div class="w-full max-w-sm xl:max-w-none overflow-hidden">
+
+					<div class="group w-full h-60 overflow-hidden relative">
+						<img src="./img/services/4.jpg" alt="Service" class="w-full h-full object-cover z-0">
+						<div
+							class="absolute z-10 inset-0 bg-black/30 flex items-center justify-center transition-all opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+							<a href="#" class="btn border-white text-white hover:bg-white hover:text-black">in detail</a>
+						</div>
+					</div>
+
+					<div class="py-5 space-y-3">
+						<h3 class="font-medium text-2xl">Service 4</h3>
+						<p class="opacity-70 text-sm">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor nulla quis sed vitae dictumst. Cras leo
+							nunc nulla feugiat elementum augue sem. Ac vitae nascetur in non.
+						</p>
+					</div>
+
+				</div>
+				<!-- /card -->
+
+				<!-- card -->
+				<div class="w-full max-w-sm xl:max-w-none overflow-hidden">
+
+					<div class="group w-full h-60 overflow-hidden relative">
+						<img src="./img/services/5.jpg" alt="Service" class="w-full h-full object-cover z-0">
+						<div
+							class="absolute z-10 inset-0 bg-black/30 flex items-center justify-center transition-all opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+							<a href="#" class="btn border-white text-white hover:bg-white hover:text-black">in detail</a>
+						</div>
+					</div>
+
+					<div class="py-5 space-y-3">
+						<h3 class="font-medium text-2xl">Service 5</h3>
+						<p class="opacity-70 text-sm">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor nulla quis sed vitae dictumst. Cras leo
+							nunc nulla feugiat elementum augue sem. Ac vitae nascetur in non.
+						</p>
+					</div>
+
+				</div>
+				<!-- /card -->
+
+				<!-- card -->
+				<div class="w-full max-w-sm xl:max-w-none overflow-hidden">
+
+					<div class="group w-full h-60 overflow-hidden relative">
+						<img src="./img/services/6.jpg" alt="Service" class="w-full h-full object-cover z-0">
+						<div
+							class="absolute z-10 inset-0 bg-black/30 flex items-center justify-center transition-all opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+							<a href="#" class="btn border-white text-white hover:bg-white hover:text-black">in detail</a>
+						</div>
+					</div>
+
+					<div class="py-5 space-y-3">
+						<h3 class="font-medium text-2xl">Service 6</h3>
+						<p class="opacity-70 text-sm">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor nulla quis sed vitae dictumst. Cras leo
+							nunc nulla feugiat elementum augue sem. Ac vitae nascetur in non.
+						</p>
+					</div>
+
+				</div>
+				<!-- /card -->
+
+			</div>
+
+		</div>
+		<!-- /services -->
+
+		<!-- projects -->
+		<div class="container py-10 sm:flex gap-5 space-y-10 sm:space-y-0">
+
+			<div class="sm:w-1/2 space-y-10 sm:space-y-20">
+
+				<div class="w-full sm:max-w-[430px] space-y-3">
+					<span class="uppercase text-sm text-[#808080] font-medium">more than 700 completed works</span>
+					<h2 class="font-semibold text-[40px]">Implemented projects for business and private clients</h2>
+					<p class="text-[#808080] text-sm max-w-[340px]">
+						Pick up everything you need to design a complete, harmonious, stylish and cozy interior of your apartment
+						or house in one place.
+					</p>
+				</div>
+
+				<div class="space-y-3 lg:space-y-0 lg:space-x-3 md:flex">
+					<div class="relative group">
+						<img src="./img/projects/1.jpg" alt="Project" class="mx-auto sm:mx-0 object-cover w-full sm:w-auto">
+						<div
+							class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+							<a href="#" class="btn border-white text-white hover:text-black hover:bg-white">book now</a>
+						</div>
+					</div>
+					<p class="text-md font-medium md:text md:rotate-180 text-center sm:text-left">
+						Sit quam ac at sed risus id commodo id.
+					</p>
+				</div>
+
+				<div class="space-y-3 lg:space-y-0 lg:space-x-3 md:flex">
+					<div class="relative group">
+						<img src="./img/projects/2.jpg" alt="Project" class="mx-auto sm:mx-0 object-cover w-full sm:w-auto">
+						<div
+							class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+							<a href="#" class="btn border-white text-white hover:text-black hover:bg-white">book now</a>
+						</div>
+					</div>
+					<p class="text-md font-medium md:text md:rotate-180 text-center sm:text-left">
+						Sit quam ac at sed risus id commodo id.
+					</p>
+				</div>
+
+			</div>
+
+			<div class="sm:w-1/2 space-y-10 sm:space-y-20 sm:pt-24 relative">
+
+				<img src="./img//projects/tool.png" alt="Tool"
+					class="absolute -right-10 -top-14 select-none pointer-events-none hidden lg:block">
+
+				<div class="space-y-3 lg:space-y-0 lg:space-x-3 md:flex justify-center">
+					<div class="relative group">
+						<img src="./img/projects/3.jpg" alt="Project" class="mx-auto sm:mx-0 object-cover w-full sm:w-auto">
+						<div
+							class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+							<a href="#" class="btn border-white text-white hover:text-black hover:bg-white">book now</a>
+						</div>
+					</div>
+					<p class="text-md font-medium md:text md:rotate-180 text-center sm:text-left">
+						Sit quam ac at sed risus id commodo id.
+					</p>
+				</div>
+
+				<div class="space-y-3 lg:space-y-0 lg:space-x-3 md:flex justify-center">
+					<div class="relative group">
+						<img src="./img/projects/4.jpg" alt="Project" class="mx-auto sm:mx-0 object-cover w-full sm:w-auto">
+						<div
+							class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+							<a href="#" class="btn border-white text-white hover:text-black hover:bg-white">book now</a>
+						</div>
+					</div>
+					<p class="text-md font-medium md:text md:rotate-180 text-center sm:text-left">
+						Sit quam ac at sed risus id commodo id.
+					</p>
+				</div>
+
+				<div class="space-y-3 lg:space-y-0 lg:space-x-3 md:flex justify-center">
+					<div class="relative group">
+						<img src="./img/projects/5.jpg" alt="Project" class="mx-auto sm:mx-0 object-cover w-full sm:w-auto">
+						<div
+							class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+							<a href="#" class="btn border-white text-white hover:text-black hover:bg-white">book now</a>
+						</div>
+					</div>
+					<p class="text-md font-medium md:text md:rotate-180 text-center sm:text-left">
+						Sit quam ac at sed risus id commodo id.
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+		<!-- /projects -->
+
+		<!-- our clients -->
+		<div class="container grid lg:grid-cols-2 gap-8 items-center py-10">
+
+			<div class="space-y-5">
+				<h2 class="font-semibold text-[40px]">Our Clients</h2>
+				<p class="opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium enim, odio
+					quas corporis
+					eligendi neque consequuntur illo.</p>
+			</div>
+
+			<div class="grid sm:grid-cols-2 items-center place-items-center gap-y-10 md:gap-y-16">
+
+				<div class="w-40 h-12">
+					<img src="./img/clients/google.svg" alt="Google" class="w-full h-full">
+				</div>
+
+				<div class="w-40 h-12">
+					<img src="./img/clients/microsoft.svg" alt="Microsoft" class="w-full h-full">
+				</div>
+
+				<div class="w-40 h-12">
+					<img src="./img/clients/microsoft.svg" alt="Microsoft" class="w-full h-full">
+				</div>
+
+				<div class="w-40 h-12">
+					<img src="./img/clients/google.svg" alt="Google" class="w-full h-full">
+				</div>
+
+			</div>
+
+
+		</div>
+		<!-- /our clients -->
+
+		<!-- contact -->
+		<div class="py-24 relative scroll-mt-16 overflow-hidden w-full">
+			<div class="container grid md:grid-cols-2 gap-10 place-content-center md:place-content-start">
+
+				<div class="space-y-10">
+
+					<h2 class="font-semibold text-4xl">Get in Touch</h2>
+
+					<p class="opacity-80 w-full max-w-[287px]">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+
+					<div class="space-y-5">
+
+						<div class="flex items-center space-x-2">
+							<div class="w-14 h-14">
+								<img src="./img/icons/phone.svg" alt="Phone">
+							</div>
+							<div>
+								<p class="font-semibold">Phone Number</p>
+								<a href="tel:+15132642969" class="inline-block font-semibold text-[28px]">+1 (153) 264-2969</a>
+							</div>
+						</div>
+
+						<div class="flex items-center space-x-2">
+							<div class="w-14 h-14">
+								<img src="./img/icons/message.svg" alt="Message">
+							</div>
+							<div>
+								<p class="font-semibold">Email</p>
+								<a href="mailto:info@company.com" class="inline-block font-semibold text-[28px]">info@company.com</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<div>
+					<form class="space-y-6 w-full max-w-none lg:max-w-[400px]">
+
+						<div class="flex flex-col">
+							<label for="name" class="font-light px-2 text-sm">Full Name</label>
+							<input type="text" id="name" placeholder="Samantha Wheeler" required class="input">
+						</div>
+
+						<div class="flex flex-col">
+							<label for="email" class="font-light px-2 text-sm">Email Address</label>
+							<input type="email" id="email" placeholder="info@gmail.com" required class="input">
+						</div>
+
+						<div class="flex flex-col">
+							<label for="message" class="font-light px-2 text-sm">What are you Contacting us about</label>
+							<textarea name="message" id="message" placeholder="Your message" required
+								class="input resize-y min-h-[65px] max-h-64"></textarea>
+						</div>
+
+						<div>
+							<button type="submit"
+								class="btn w-full text-lg font-semibold bg-black text-white hover:text-black hover:bg-white border-black">
+								let's talk
+							</button>
+						</div>
+
+					</form>
+				</div>
+
+			</div>
+
+			<img src="./img/worker.jpg" alt="Worker"
+				class="select-none pointer-events-none absolute -right-24 bottom-0 hidden xl:block">
+
+		</div>
+		<!-- /contact -->
+
+	</main>
+
+	<!-- footer -->
+	<footer class="mt-auto bg-black text-white pt-14">
+		<div class="container">
+
+			<div class="flex justify-center md:justify-start">
+				<a href="./index.html">
+					<img src="./img//footer-logo.svg" alt="Logo">
+				</a>
+			</div>
+
+			<div class="border-b border-white flex md:justify-between flex-col md:flex-row items-baseline py-7 space-y-5">
+
+				<div class="mx-auto md:mx-0">
+					<ul class="flex flex-col space-y-5 text-center sm:text-left sm:space-y-0 sm:flex-row sm:space-x-14">
+						<li><a href="./index.html">About Us</a></li>
+						<li><a href="./services.html">Our service</a></li>
+						<li><a href="./gallery.html">Gallery</a></li>
+						<li><a href="./contact.html">Contact us</a></li>
+					</ul>
+				</div>
+
+				<div class="mx-auto md:mx-0">
+					<ul class="flex space-x-5 items-center">
+						<li><a href="#"><img src="./img/social-icons/facebook.svg" alt="Facebook"></a></li>
+						<li><a href="#"><img src="./img//social-icons/twitter.svg" alt="Twitter"></a></li>
+						<li><a href="#"><img src="./img/social-icons/linkedin.svg" alt="Linked In"></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="flex flex-col sm:flex-row sm:justify-between py-7 space-y-3 sm:space-y-0">
+
+				<div class="flex justify-center sm:justify-start">
+					<div class="flex text-xs opacity-80 divide-x space-x-3">
+						<div>Privacy</div>
+						<div class="pl-3">Cookie Policy</div>
+						<div class="pl-3">Terms Of Service</div>
+					</div>
+				</div>
+
+				<div class="opacity-80 text-xs text-center sm:text-right">
+					<p>Copyright © Company name All rights reserved</p>
+				</div>
+
+			</div>
+
+		</div>
+	</footer>
+	<!-- /footer -->
+
+</body>
+
+</html>
